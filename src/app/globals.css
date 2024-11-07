@@ -19,3 +19,302 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradient 10s ease infinite;
+}
+/* Example CSS for NavBar */
+.navbar {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Ensure it appears above other content */
+}
+.neon-text {
+  font-family: 'Lobster', cursive;
+}
+
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+}
+
+.neon-text {
+  font-family: 'Lobster', cursive; /* Use the Lobster font */
+  color: #00FFFF; /* Neon cyan color */
+  text-shadow: 
+    0 0 5px #00FFFF, 
+    0 0 10px #00FFFF, 
+    0 0 20px #00FFFF, 
+    0 0 30px #00FFFF, 
+    0 0 40px #00FFFF; /* Glowing effect */
+  animation: neon-flicker 1.5s infinite alternate; /* Flicker effect */
+}
+
+@keyframes neon-flicker {
+  0% {
+    text-shadow: 
+      0 0 5px #00FFFF, 
+      0 0 10px #00FFFF, 
+      0 0 20px #00FFFF, 
+      0 0 30px #00FFFF, 
+      0 0 40px #00FFFF;
+  }
+  100% {
+    text-shadow: 
+      0 0 10px #00FFFF, 
+      0 0 20px #00FFFF, 
+      0 0 30px #00FFFF, 
+      0 0 40px #00FFFF, 
+      0 0 50px #00FFFF;
+  }
+}
+
+/* pages/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bg-circular-pattern {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%),
+                    radial-gradient(circle, rgba(255, 255, 255, 0.2) 30%, transparent 30%);
+  background-size: 50px 50px;
+  position: relative;
+  animation: wave 15s linear infinite;
+  z-index: -1;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.neon-circle {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(20, 34, 158, 0.5),
+              0 0 30px rgba(20, 34, 158, 0.5);
+}
+
+.neon-gold-shadow {
+  background-color: black;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7),
+              0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.neon-gold-shadow:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.9),
+              0 0 40px rgba(255, 215, 0, 0.7);
+}
+
+
+.animate-bg-color {
+  animation: bg-color-change 5s infinite alternate;
+}
+
+@keyframes bg-color-change {
+  0% {
+    background-color: #ff7a00;
+  }
+  50% {
+    background-color: #00bfff;
+  }
+  100% {
+    background-color: #ff1493;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+/* Neon Card Effect */
+.neon-card {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+/* Neon Text Effect */
+.neon-text {
+  color: #00FFFF; /* Cyan color */
+  text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 40px #00FFFF;
+  transition: transform 0.3s;
+}
+
+.neon-text:hover {
+  transform: scale(1.1); /* Slightly enlarge text on hover */
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 40px #00FFFF, 0 0 60px #00FFFF;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Stylish text */
+.stylish-text {
+  font-family: 'Poppins', sans-serif; /* Choose a stylish font */
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+/* Neon border effect */
+.neon-border {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.6), 0 0 16px rgba(255, 0, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-border:hover {
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* Smooth fade-in for the heading */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-out forwards;
+}
+
+/* Stylish text */
+.stylish-text {
+  font-family: 'Poppins', sans-serif; /* Choose a stylish font */
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+/* Neon border effect */
+.neon-border {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.6), 0 0 16px rgba(255, 0, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-border:hover {
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* Smooth fade-in for the heading */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-2zz0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-out forwards;
+}
+
+/* Slow scrolling effect */
+@keyframes slow-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slow-scroll {
+  animation: slow-scroll 30s linear infinite;
+}
+
+.neon-circle {
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.5);
+  transition: transform 0.5s ease;
+}
+.neon-gold-shadow {
+  background-color: black;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.7), 0 0 40px rgba(255, 215, 0, 0.5);
+}
+.neon-gold-shadow:hover {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.9), 0 0 50px rgba(255, 215, 0, 0.7);
+}
+:root {
+  --animation-duration: 10s; /* slower speed */
+}
+.animate-scroll {
+  display: flex;
+  animation: scroll var(--animation-duration) linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.scroller-content {
+  display: flex;
+}
+.neon-border {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+.neon-border:hover {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.6);
+}
+
+
+
+/* Add this to your global CSS or tailwind config */
+@layer components {
+  .neon-border {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 255, 0.8), 0 0 20px 5px rgba(0, 0, 255, 0.6), 0 0 30px 10px rgba(0, 0, 255, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .neon-border:focus {
+    box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.8), 0 0 20px 5px rgba(0, 255, 255, 0.6), 0 0 30px 10px rgba(0, 255, 255, 0.4);
+  }
+}
