@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { AiOutlineDownload, AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineMail } from "react-icons/ai"; // Icons for Home, About, Projects, and Contact
 import { FiMenu, FiX } from "react-icons/fi"; // FiX icon for closing menu
-import { FaTools } from "react-icons/fa"; // Icon for Skills
+import { FaServicestack, FaTools } from "react-icons/fa"; // Icon for Skills
 import { motion } from "framer-motion";
 
 const Header: React.FC = () => {
@@ -25,7 +25,9 @@ const Header: React.FC = () => {
     { name: "About", href: "#about", icon: <AiOutlineUser /> },
     { name: "Skills", href: "#skills", icon: <FaTools /> },
     { name: "Projects", href: "#projects", icon: <AiOutlineFundProjectionScreen /> },
+    { name: "Service", href: "#service", icon: < FaServicestack /> },
     { name: "Contact", href: "#contact", icon: <AiOutlineMail /> }
+  
   ];
 
   return (

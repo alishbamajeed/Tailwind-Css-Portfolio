@@ -19,6 +19,7 @@ function App() {
        <div id="skills"><Skill /></div>
      
       <div id="projects"><Project /></div> 
+    
       <div id="services"><Service /></div> {/* Services Section */}
       <div id="contact"><Contact /></div> {/* Contact Section */}
       <Footer />
