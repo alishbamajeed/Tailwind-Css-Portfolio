@@ -25,9 +25,8 @@ const Header: React.FC = () => {
     { name: "About", href: "#about", icon: <AiOutlineUser /> },
     { name: "Skills", href: "#skills", icon: <FaTools /> },
     { name: "Projects", href: "#projects", icon: <AiOutlineFundProjectionScreen /> },
-    { name: "Service", href: "#service", icon: < FaServicestack /> },
+    { name: "Service", href: "#service", icon: <FaServicestack /> },
     { name: "Contact", href: "#contact", icon: <AiOutlineMail /> }
-  
   ];
 
   return (
@@ -65,8 +64,12 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex space-x-5">
           {menuItems.map((item) => (
             <Link key={item.name} href={item.href}>
-              <span className="relative text-white text-lg font-medium transition-colors duration-300 hover:text-red-400 cursor-pointer">
-                {item.name}
+              <span
+                className={`relative text-white text-lg font-medium transition-colors duration-300 hover:text-red-400 cursor-pointer ${
+                  item.name === "Service" ? "text-blue-500 font-semibold" : ""
+                }`}
+              >
+                {item.icon} <span>{item.name}</span>
               </span>
             </Link>
           ))}
@@ -92,7 +95,9 @@ const Header: React.FC = () => {
               <Link key={item.name} href={item.href}>
                 <span
                   onClick={() => setIsOpen(false)} // Close menu on link click
-                  className="flex items-center text-lg font-medium transition-colors duration-300 hover:text-red-400 cursor-pointer space-x-2"
+                  className={`flex items-center text-lg font-medium transition-colors duration-300 hover:text-red-400 cursor-pointer space-x-2 ${
+                    item.name === "Service" ? "text-blue-500 font-semibold" : ""
+                  }`}
                 >
                   {item.icon} <span>{item.name}</span>
                 </span>
