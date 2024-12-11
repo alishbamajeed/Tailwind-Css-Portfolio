@@ -55,7 +55,7 @@ export default function InfiniteMovingCardsDemo() {
   return (
     <div className="h-auto md:h-[40rem] rounded-md flex flex-col items-center justify-center relative overflow-hidden bg-gradient-to-r from-fuchsia-950 to-black dark:bg-black">
       {/* Animated Heading */}
-      <h2 className="text-5xl tracking-wide relative z-10 font-bold hover:text-pink-700 transition-colors duration-300 text-gray-200 dark:text-white mb-8 animate-fade-in">
+      <h2 className="text-3xl tracking-wide relative z-10 font-bold hover:text-pink-700 transition-colors duration-300 text-gray-200 dark:text-white mb-8 animate-fade-in">
         My Project
       </h2>
 
