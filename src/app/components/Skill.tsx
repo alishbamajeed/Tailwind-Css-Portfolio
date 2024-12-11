@@ -76,19 +76,20 @@ export default function Skills() {
       </div>
 
       <div className="flex flex-col items-center py-12 z-10 relative">
-        <h2 className="text-6xl font-bold text-white mb-12">My Skills</h2>
+        <h2 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-12 animate-text-glow-slight hover:text-blue-300 transition-colors duration-300">My Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl px-4">
           {skills.map((skill, index) => (
             <motion.div
               key={index}
               className="relative p-5 rounded-lg neon-border flex items-center"
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
             >
               <div className="text-4xl mr-4">{skill.icon}</div> {/* Icon */}
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-white mb-2">{skill.name}</h3>
+                <h3 className="text-xl font-semibold text-gradient mb-2">{skill.name}</h3> {/* Stylish font and gradient text */}
                 <div className="w-full bg-gray-800 h-3 rounded-full">
                   <motion.div
                     className="h-3 rounded-full neon-glow"
@@ -118,7 +119,13 @@ export default function Skills() {
         .neon-glow {
           box-shadow: 0 0 10px rgba(255, 20, 147, 0.8), 0 0 20px rgba(255, 20, 147, 0.5);
         }
-
+        /* Stylish gradient text */
+        .text-gradient {
+          background: linear-gradient(90deg, rgba(255, 0, 150, 1) 0%, rgba(0, 204, 255, 1) 100%);
+          background-clip: text;
+          color: transparent;
+          font-family: 'Poppins', sans-serif;
+        }
         /* Background Bubble Animation */
         .bubble {
           position: absolute;
