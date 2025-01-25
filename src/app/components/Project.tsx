@@ -65,7 +65,7 @@ const testimonials = [
 
 export default function AnimatedProjects() {
   return (
-    <div className="min-h-screen rounded-md flex flex-col items-center justify-center bg-gradient-to-r from-fuchsia-950 to-black py-10 px-4 sm:px-6 lg:px-12">
+    <div className="min-h-screen rounded-md flex flex-col items-center justify-center bg-gradient-to-r from-fuchsia-950 to-black py-10 px-4 sm:px-6 lg:px-8">
       <motion.h2
         className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide text-white mb-8 stylish-text text-center"
         initial={{ opacity: 0, y: -50 }}
@@ -93,7 +93,7 @@ export default function AnimatedProjects() {
         {testimonials.map((item, idx) => (
           <motion.div
             key={idx}
-            className="w-full h-[280px] sm:h-[300px] relative rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 border-2 border-gray-600 hover:border-pink-500 hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-pink-500/50"
+            className="w-full h-auto sm:h-[300px] relative rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 border-2 border-gray-600 hover:border-pink-500 hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-pink-500/50"
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
@@ -105,6 +105,7 @@ export default function AnimatedProjects() {
                   <Image
                     src={item.imageUrl}
                     alt={item.quote || item.name || "Project image"}
+                    layout="responsive"
                     width={350}
                     height={200}
                     className="w-full h-36 sm:h-40 object-cover rounded-md hover:scale-110 transition-transform duration-300"
