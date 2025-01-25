@@ -65,9 +65,9 @@ const testimonials = [
 
 export default function AnimatedProjects() {
   return (
-    <div className="min-h-screen rounded-md flex flex-col items-center justify-center bg-gradient-to-r from-fuchsia-950 to-black py-12 px-4 sm:px-6 lg:px-12">
+    <div className="min-h-screen rounded-md flex flex-col items-center justify-center bg-gradient-to-r from-fuchsia-950 to-black py-10 px-4 sm:px-6 lg:px-12">
       <motion.h2
-        className="text-4xl sm:text-5xl font-extrabold tracking-wide text-white mb-10 stylish-text text-center"
+        className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide text-white mb-8 stylish-text text-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -93,7 +93,7 @@ export default function AnimatedProjects() {
         {testimonials.map((item, idx) => (
           <motion.div
             key={idx}
-            className="w-full h-[320px] relative rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 border-2 border-gray-600 hover:border-pink-500 hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-pink-500/50"
+            className="w-full h-[280px] sm:h-[300px] relative rounded-xl bg-gradient-to-b from-gray-800 to-gray-900 border-2 border-gray-600 hover:border-pink-500 hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-pink-500/50"
             variants={{
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
@@ -107,12 +107,12 @@ export default function AnimatedProjects() {
                     alt={item.quote || item.name || "Project image"}
                     width={350}
                     height={200}
-                    className="w-full h-40 sm:h-44 object-cover rounded-md hover:scale-110 transition-transform duration-300"
+                    className="w-full h-36 sm:h-40 object-cover rounded-md hover:scale-110 transition-transform duration-300"
                     priority
                   />
                 )}
-                <blockquote className="mt-4 text-center">
-                  <p className="text-base sm:text-lg font-extrabold text-white stylish-text">
+                <blockquote className="mt-3 text-center">
+                  <p className="text-sm sm:text-base lg:text-lg font-extrabold text-white stylish-text">
                     {item.quote || item.name}
                   </p>
                 </blockquote>
