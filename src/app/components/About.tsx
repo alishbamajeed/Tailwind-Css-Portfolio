@@ -70,17 +70,16 @@ function About() {
                     {
                       title: "Introduction",
                       description:
-                        "Hello! I&apos;m Alishba, a passionate web developer focused on creating interactive, user-friendly, and responsive websites.",
+                        "Hi! I’m Alishba, a dedicated Frontend Developer with a passion for creating engaging, user-friendly, and innovative web solutions. My expertise includes modern web development tools like HTML, CSS, JavaScript, TypeScript, React, and Next.js, enabling me to bring ideas to life through beautifully designed and fully functional websites.",
                     },
                     {
                       title: "My Journey",
                       description:
-                        "I started learning web development in 2023 and have been fascinated by the endless possibilities of the web ever since.",
+                        "I began my journey into tech with a deep interest in designing and coding. Over the past year, I have been learning as a Senior Student at Governor's House, where I had the opportunity to gain hands-on experience in building responsive websites and working on dynamic projects. During this time, I mastered frontend technologies like HTML, CSS, JavaScript, TypeScript, React, and Next.js, along with expertise in Sanity CMS for creating content-driven applications.",
                     },
                     {
                       title: "Education",
-                      description:
-                        "Currently, I am pursuing my degree in Computer Science, where I am learning a wide range of technical skills.",
+                      description: "I recently completed my Intermediate in Pre-Medical and have now been admitted to university for Software Engineering. In this new chapter, I am dedicated to enhancing my coding and development skills."
                     },
                   ].map((step, index) => (
                     <motion.div

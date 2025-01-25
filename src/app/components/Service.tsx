@@ -34,9 +34,9 @@ const services = [
     icon: <FaUserCheck className="h-12 w-12 text-blue-500 mb-4" />,
   },
   {
-    title: "JavaScript Development",
+    title: "Frontened Development",
     description:
-      "Building dynamic and interactive features using JavaScript and frameworks like React or Vue.",
+      "Building dynamic and interactive features using next.js and frameworks like React or Vue.",
     icon: <FaCode className="h-12 w-12 text-teal-500 mb-4" />,
   },
 ];

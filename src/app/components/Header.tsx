@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/cv/Resume.pdf"; // Update with your actual CV path
+    link.href = "/cv/Resume.pdf";
     link.setAttribute("download", "Alishba_CV.pdf");
     document.body.appendChild(link);
     link.click();
